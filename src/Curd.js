@@ -50,7 +50,6 @@ function Curd() {
                     todos.map((elem) => {
                         return (
                             <div key={elem.id}>
-
                                 <h3>{elem.text}</h3>
                                 <button onClick={() => dispatch(deleteTodo(elem.id))} >Delete</button>
                                 <button onClick={() => editItem(elem)}>Edit</button>
